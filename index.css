@@ -1,0 +1,119 @@
+@charset "uft-8";
+body
+{
+    background-color: rgb(0,15,53);
+    background-image: url(../static/images/cp_bgpt21.png);
+    background-size: 1305px 1305px;
+    font-family: 'Noto Sans TC', sans-serif;
+    /*font-family: 'Limelight',cursive;*/
+}
+a
+{
+    color:rgb(0,168,255);
+}
+a:hover/*hover浮起來*/
+{
+   color:yellow;
+   text-decoration: none;
+}
+harder,nav,footer/*left左邊 right右邊 center中間*/
+{
+    text-align: center;/*對其 center中間*/
+}
+h1
+{
+    width: 528px; /*寬度*/
+    margin: 40px auto;/*邊筐*/
+    border:5px solid #95dbbd ;/*邊界 solid實心*/
+    padding:30px;/*填充*/
+    background-color:coral;/*背景顏色*/
+    color:#000;/*顏色*/
+    font-size: 300%;/*字的大小*/
+    text-align: center;/*對其 center中間*/
+    line-height: 1;/*線高*/
+    border-radius: 50%;/*製作弧度％越大越凹*/
+    text-shadow: 10px 10px 50px rgb(255,234,231);/*xy軸,混濁度,顏色*/
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);/*xy軸,混著度,顏色(0完全透明,1完全混濁)*/
+    font-family: 'Limelight',cursive;/**/
+}
+.h2/*有加點會變成class*/
+{
+    margin-bottom: 30px;/*邊筐*/
+    border: 1px dotted #94c8b1;/*邊界 dotted點點點*/
+    border-left: 10px solid #d0e35b;/*左邊邊界 solid實心*/
+    padding: 10px;/*填充*/
+    color: #6fbb9a;/*顏色*/
+}
+.c1/*有加點會變成class*/
+{
+    margin-bottom: 30px;/*邊筐*/
+    border: 1px dotted #94c8b1;/*邊界 dotted點點點*/
+    border-left: 10px solid #000000;/*左邊邊界 solid實心*/
+    padding: 10px;/*填充*/
+    color: #000000;/*顏色*/
+}
+.c2/*有加點會變成class*/
+{
+    margin-bottom: 30px;/*邊筐*/
+    border: 1px dotted #94c8b1;/*邊界 dotted點點點*/
+    border-left: 10px solid #d0f000;/*左邊邊界 solid實心*/
+    padding: 10px;/*填充*/
+    color: #d0f000;/*顏色*/
+}
+.h3
+{
+    color: rgb(0,168,255);
+    background-color:azure;
+    /*border-radius: 10%;/*製作弧度％越大越凹*/
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);/*xy軸,混著度,顏色(0完全透明,1完全混濁)*/
+}
+.h3 span/*span次目錄的編輯*/
+{
+    color: rgb(254,168,255);
+    font-size: 80%;/*字的大小*/
+}
+p.p1
+{
+    text-align: center;/*對其 center中間*/
+}
+p
+{
+    color: rgb(0,168,255);
+}
+li
+{
+    color:rgb(0,168,255);
+}
+dt
+{
+    color: rgb(0,168,255);
+}
+dd
+{
+    color: rgb(0,168,255);
+}
+main#contents/*在主程式畫出框框*/
+{
+    margin: 40px;
+    border: 1px solid #FFFFFF;/*邊界 solid實心*/
+    padding: 40px 80px;/*填充左右40上下80*/
+    background-color: blanchedalmond;
+}
+.more
+{
+    text-align: right;
+}
+.more::after
+{
+    content: url(../static/images/next2.png);
+    margin-left: 3px;
+    vertical-align: middle;/*垂直對齊：文本中間*/
+}
+img.img-me
+{
+    border-radius: 50%;/*製作弧度％越大越凹*/
+}
+img.img-family
+{
+    border-radius: 20%;/*製作弧度％越大越凹*/
+}
