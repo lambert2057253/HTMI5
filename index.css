@@ -94,6 +94,11 @@ ul.menu a:hover
     color: rgb(254,168,255);
     font-size: 80%;/*字的大小*/
 }
+p.p2
+{
+    font-size: 28px;
+    color: firebrick;
+}
 p.p1
 {
     text-align: center;/*對其 center中間*/
@@ -139,11 +144,17 @@ img.img-family
 {
     border-radius: 20%;/*製作弧度％越大越凹*/
 }
+/*文繞圖設定*/
 .imgLeft
 {
     float: left;/*浮動：左*/
     margin-left: 20px;/*左邊邊距*/
     margin-right: 20px;
+}
+.objectLeft 
+{
+  float: left; /* right*/
+  margin-right: 20px;
 }
 .imgRight
 {
@@ -164,4 +175,89 @@ img.img-family
     content: "";/*content虛擬出一個空間放入東西*/
     display: block;/*顯示：區塊*/
     clear: both;/*清除：兩者*/
+}
+
+
+/* clear the float value: left, right, both */
+.clear {
+  clear: both;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*圓形圖片設定*/
+.img-round {
+  border-radius: 50%;
+}
+
+/* sidebar menu */
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* initially 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: green; /* Black: #111*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you move mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (@ top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidebar */
+.openbtn {
+  font-size: 60px;
+  cursor: pointer;
+  background-color: #fbf9cc; /*#111; /* black*/
+  color: green;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #6fbb9a; /*#444;*/
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+.myvideobox iframe/*要加iframe才會包住他沒有寫包不到*/
+{
+    border: 5px solid red;
+    /*border-radius: 30%;/*製作弧度％越大越凹*/
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
 }
