@@ -25,14 +25,20 @@
 </head>
 <body>
     <div id="main">
-        <a href="#Home">關於本站</a>
-        <a href="#Family">我家的家人</a>
-        <a href="#Me">我</a>
-    </div>
+        <div class="objectLeft">
+            <button class="openbtn" onclick="openNav()">☰</button> 
+        </div>
     <header><!--hearder顯示在網站的頭-->
         <h1>介紹我們家庭成員的網頁</h1><!--h主要大的字體-->
         <p class="p1">介紹一下我家人吧！</p>
     </header>
+    <div class="sidebar" id="mySidebar">
+        <a href="javascript:void(0)" onclick="closeNav()" class="closebtn">x</a>
+        <a href="#intro" onclick="closeNav()">關於本站</a>
+        <a href="#cats" onclick="closeNav()">我家的貓咪</a>
+        <a href="#profile" onclick="closeNav()">飼主介紹</a>
+        <a href="./survey/survey.html" onclick="closeNav()">你家的貓咪</a>
+    </div>
 
     <div>
         <nav>
@@ -59,10 +65,32 @@
                 <p class="more clear"><a href="static/family/father.html">更多介紹</a></p>
             </section>
             <section>
+                <h4 class="h3">影片輸出<span>(用下載的教學)</span></h4>
+                <div><!--controls讓影片可以拉-->
+                    <video class="imgCenter" width="480" height="320" alt="爸爸" controls poster="./static/images/15936587_251693208584860_3225315094631906427_o.jpg">
+                        <source src="./static/video/y2mate.com%20-%20%E5%BF%83%E8%B7%B3%E7%9A%84%E8%AD%89%E6%98%8E%20%20%E4%B8%8D%E6%98%AF%E8%8A%B1%E7%81%AB%E5%91%80%E4%BD%A0%E6%98%AF%E6%88%91%E5%94%AF%E4%B8%80%E6%83%B3%E8%A6%81%E7%9A%84%E6%B1%BA%E5%AE%9A%E6%AF%8F%E4%B8%80%E6%AC%A1%20%E5%86%8D%E4%B8%80%E6%AC%A1%20%E4%BD%A0%E6%85%A2%E6%85%A2%E7%9A%84%E9%9D%A0%E8%BF%91%E5%8B%95%E6%85%8B%E6%AD%8C%E8%A9%9E_v720P.mp4" type="video/mp4">
+                    </video>  
+                    <p class="p2">用下載的方式就可以第一張封面自己改可以放jpg或gif</p>
+                    <p class="clear"></p>
+                </div>
+            </section>
+            <section>
                 <h3 class="h3">●媽媽</h3>
                 <img class="img-family imgRight" src  ="./static/images/v2-055c7561543a549d03198b82700b39a8_hd.jpg" width="488" height="488" alt="媽媽">
                 <p>出生於ＸＸ縣ＸＸ年Ｘ月Ｘ日生是屬於家裡最好的緩衝區</p>
                 <p class="more clear"><a href="">更多介紹</a></p>
+            </section>
+            <section>
+                <h4 class="h3">影片輸出<span>(重YouTube拉下來的教學)</span></h4>
+                <div class="myvideobox">
+                    <iframe class="imgRight" width="560" height="315" src="https://www.youtube.com/embed/qVlSdYs4zAU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+                <p class="p2">
+                    要沒有版權的才可以載入<br>
+                    要去YuoTube上面按右鍵就有"嵌入程式碼"複製即可
+                </p>
+                <p class="clear"></p> 
             </section>
             <section>
                 <h3 class="h3">●姊姊<span>(是老大)</span></h3>
@@ -85,7 +113,7 @@
                 <dt>職業 ：</dt><dd>大學生</dd>
                 <dt>生日 ：</dt><dd>2003年1月1日</dd>
                 <dt>mail ：</dt><dd>lambert2057253@gamil.com</dd>
-                <dt>FB ： </dt><dd><a target="_blank" href = "https://www.facebook.com/profile.php?id=100012325483474">我的FB</a></dd><!--target="_blank"清除網頁上的所有資料-->
+                <dt>FB ： </dt><dd><a target="_blank" href = "https://www.facebook.com/profile.php?id=100012325483474">我的FB</a></dd><!--target="_blank"跳一個新的網頁-->
                 <dt>Web ：</dt><dd><a href="https://github.com/lambert2057253" >https://github.com/lambert2057253</a></dd>
             </dl>
         </section>
@@ -95,16 +123,18 @@
     <footer>
       <p><small>Copyright © 介紹我們家庭成員的網頁 All Rights Reserved.</small></p>
     </footer>
+    </div>
     <script>
     <!--function函數的意思-->
-        function openNav(){
-            document.getElementById("mySidebar").style.width = "250";
-            document.getElementById("main").style.marginLeft = "250";
-        function closeNav(){
-            document.getElementById("Sidebar").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-        }
-        }
+            function openNav() {
+              document.getElementById("mySidebar").style.width = "250px";
+              document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+              document.getElementById("mySidebar").style.width = "0";
+              document.getElementById("main").style.marginLeft= "0";
+            }
     </script>
 </body>
 </html>
