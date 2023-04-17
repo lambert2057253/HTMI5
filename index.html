@@ -34,10 +34,10 @@
     </header>
     <div class="sidebar" id="mySidebar">
         <a href="javascript:void(0)" onclick="closeNav()" class="closebtn">x</a>
-        <a href="#intro" onclick="closeNav()">關於本站</a>
-        <a href="#cats" onclick="closeNav()">我家的貓咪</a>
-        <a href="#profile" onclick="closeNav()">飼主介紹</a>
-        <a href="./survey/survey.html" onclick="closeNav()">你家的貓咪</a>
+        <a href="#Home" onclick="closeNav()">關於本站</a>
+        <a href="#Family" onclick="closeNav()">我家的家人</a>
+        <a href="#Me" onclick="closeNav()">我</a>
+        <a href="./survey/survey.html" onclick="closeNav()">聯絡我們</a>
     </div>
 
     <div>
@@ -46,6 +46,7 @@
                 <li><a href="#Home">關於本站</a></li><!--href="#"表示目錄要讓下面的id抓取用的-->
                 <li><a href="#Family">我家的家人</a></li><!--li要讓東西出去-->
                 <li><a href="#Me">我</a></li>
+                <li><a href="">聯絡我們</a></li>
             </ul>
         </nav>
     </div>
@@ -125,12 +126,11 @@
     </footer>
     </div>
     <script>
-    <!--function函數的意思-->
+    /*function函數的意思*/
             function openNav() {
               document.getElementById("mySidebar").style.width = "250px";
               document.getElementById("main").style.marginLeft = "250px";
             }
-
             function closeNav() {
               document.getElementById("mySidebar").style.width = "0";
               document.getElementById("main").style.marginLeft= "0";
